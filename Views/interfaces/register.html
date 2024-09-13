@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro || Tu vehiculo ideal</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+
+<body>
+    <main class="login register" id="home">
+        <h2>Tu vehiculo ideal</h2>
+        <p>Ingresa Tus Datos y Crea una Nueva. Recuerda elegir tu rol.</p>
+        <form action="../../Controllers/registrarUserEx.php" method="post">
+            <input name="identificacion" type="number" placeholder="Identificación" required>
+            <input name="nombre" type="text" placeholder="Nombres" required>
+            <input name="apellido" type="text" placeholder="Apellidos" required>
+            <input name="telefono" type="number" placeholder="Teléfono" required>
+            <input name="email" type="email" placeholder="Correo Electrónico" required>
+            <input name="clave" type="password" placeholder="Contraseña" required>
+            <div class="select">
+                <select name="rol" required>
+                    <option value="">Seleccione Rol</option>
+                    <option value="1">Comprador</option>
+                    <option value="2">Vendedor</option>
+                </select>
+            </div>
+            <button type="submit">Crear Mi Cuenta</button>
+        </form>
+    </main>
+</body>
+
+</html>
